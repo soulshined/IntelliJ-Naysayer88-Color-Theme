@@ -1,0 +1,42 @@
+<idea-plugin>
+    <id>com.freer.naysayer88</id>
+    <name>naysayer88</name>
+    <version>0.3</version>
+    <vendor email="davidwfreer@pm.me" url="https://github.com/soulshined">David Freer</vendor>
+
+    <description><![CDATA[
+      A color theme that is easy on the eyes and feels like a cool leather portfolio.<br>In honor of and inspired by Jonathan Blows emac theme
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <h1>v0.3</h1>
+      <p>Added support for the new ui (which is still in <a href="https://youtrack.jetbrains.com/articles/IDEA-A-156/Main-changes-and-known-issues">beta</a>). You can now select the 'naysayer88 (exp ui)' theme and editor scheme as well if you are using the new ui</p>
+      <p>Please note that there are a <b><i>ton</i></b> of differences in what the old UI has and what this new UI permits you to customize</p>
+      <p>So due to that the exp ui theme looks way different than what the legacy theme looks like, you'll immediately notice the toolbars for example don't fill in with the tan color. Things like this are not my choice and are a reflection of the new UI customization properties</p>
+      <p>So you may or may not like it, that's ok, but change is hard and the new ui is a drastic change if you're coming from the old UI</p>
+      <p>A ton of work has gone into supporting this new UI, even down to customizing the git ref labels, but a lot of work is needed to support it still, specifically with icons, due to how they changed some things, especially considering how difficult it is to view all the components possible in all the different combinations they exist so consider this version a 'working draft'. It's enough to feel complete but due to all the changes it's hard to catch everything</p>
+      <p>So please bring things to my attention if you think it should look different based on your experiences in a <a href="https://github.com/soulshined/IntelliJ-Naysayer88-Color-Theme/issues">github issue</a></p>
+
+      <hr/>
+
+      <h1>Hello World<h1>
+      <p>In honor of and inspired by Jonathan Blows emac theme</p>
+    ]]></change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="213.*"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <themeProvider id="77de3caa-2866-4bd8-a465-46d567eba3f9" path="/theme/naysayer88.theme.json"/>
+        <themeProvider id="4071430c-20ff-4aa4-b449-71493a12574c" path="/theme/naysayer88-exp-ui.theme.json"/>
+    </extensions>
+
+</idea-plugin>
